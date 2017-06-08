@@ -30,9 +30,7 @@ public class Deck {
         for(int count = 0; count<501; count++)
         {
         Random num = new Random();
-        // picks two random numbers from the number left in the deck,
-        // and then adds the 'top' so as to not include the cards
-        // already removed from the deck
+        
         int num1 = (num.nextInt(mDeckSize) + mTop);
         int num2 = (num.nextInt(mDeckSize) + mTop);
         mDeckTemp1 = new Card[1];

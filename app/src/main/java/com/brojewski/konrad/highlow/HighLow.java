@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class HighLow extends Activity {
-    /** Called when the activity is first created. */
+   
 	public static final String PREFS_NAME = "HighLowPrefs";
 	public static final String LONG_STREAK_PREF = "longestStreak";
 	
@@ -34,7 +34,7 @@ public class HighLow extends Activity {
         
         this.getWindow().setBackgroundDrawableResource(R.drawable.green_back);
         
-        // Set up the Views.....
+       
         mViewCard = (ImageView) findViewById(R.id.card_image);
         mViewCardsLeft = (TextView) findViewById(R.id.cards_left);
         mViewCurStreak = (TextView) findViewById(R.id.cur_streak);
@@ -49,7 +49,7 @@ public class HighLow extends Activity {
         mHighChoice.setOnClickListener(mChoiceHandler);
         newGame.setOnClickListener(mNewGameHandler);
 
-		// Get Longest Streak.....
+		
         SharedPreferences settings = this.getSharedPreferences(PREFS_NAME, 0);
         int longestStreak = settings.getInt(LONG_STREAK_PREF, 0); 
 		

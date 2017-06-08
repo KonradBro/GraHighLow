@@ -33,7 +33,7 @@ public class HighLowGame {
 		if (mShoe[mCurDeck].cardsLeftInDeck()>0) {
 			mShoe[mCurDeck].dealCard();
 		} else if (this.getNumDecksLeft()>0) {
-			// Go to the next deck....
+			
 			mCurDeck++;
 			mShoe[mCurDeck].dealCard();
 		} else {
